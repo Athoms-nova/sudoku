@@ -1,0 +1,294 @@
+body{
+  background-color: rgba(0, 0, 0, 0.897);
+}
+
+#Jeu{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+/*========== Menu ===============*/
+
+
+#Menu{
+  border: solid rgba(209, 208, 224, 0.897) 10px;
+  border-radius: 40px;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 30px;
+  background-color: rgb(139, 139, 139);
+}
+
+#Menu h1{
+  font-size: 5em;
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+#selection{
+  border: solid rgba(209, 208, 224, 0.897);
+  border-radius: 40px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgba(255, 253, 253, 0.897);
+}
+
+#niveau{
+  border: solid rgba(76, 76, 76, 0.897);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(209, 208, 224, 0.897);
+}
+
+#commencer{
+  border: solid rgba(76, 76, 76, 0.897);
+  border-radius: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  background-color: rgba(209, 208, 224, 0.897);
+}
+
+select{
+  border: solid;
+  font-size: 1.1em;
+  margin-bottom : 20px;
+  margin-top: 9px;
+  font-weight: bold;
+}
+
+option{
+  font-weight: bold;
+}
+
+#Menu h2{
+  margin: 0px;
+  text-decoration: underline;
+}
+
+#commencer button{
+  border: solid;
+  width: 80%;
+  margin-top: 9px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+/*========= Grille et Mini Bloc ========*/
+#Grille{
+  border: solid;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 290px;
+  background-color: black;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.Bloc{
+  margin: 0px;
+  margin-bottom: 2.5px;
+  margin-top: 2.5px;
+}
+
+.Bloc ul{
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+
+.Bloc li{
+  text-align: center;
+  margin: 0px;
+  height: 28px;
+  width: 28px;
+  font-size: 1.2em;
+}
+
+
+/*============== Clavier Virtuel ==============*/
+
+.clavier{
+  display: flex;
+  justify-content: center;
+  height: 32px;
+}
+
+.clavier button{
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.clavier button:hover{
+  background-color: yellow;
+}
+
+/*============ Option ==============*/
+#Option{
+  border: solid rgba(76, 76, 76, 0.897);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  margin-left: 15px;
+  padding: 15px;
+  background-color: white;
+}
+
+#Option .Time{
+  border: solid rgba(160, 160, 160, 0.714);
+  border-radius: 12px;
+  padding: 3px;
+  margin-bottom: 8px;
+  background-color: rgba(221, 221, 221, 0.822);
+}
+
+#Option .Time p{
+  color: black;
+}
+
+#Option p{
+  margin: 0px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: blue;
+}
+
+#Option input{
+  width: 17px;
+  height: 17px;
+}
+
+#Option button{
+  border: solid 2px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/*================= Boutton sudoku ==============*/
+#Boutton{
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Boutton button{
+  border: solid;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/*================== Sudoku ============*/
+#Sudoku{
+  border: solid rgba(209, 208, 224, 0.897) 10px;
+  border-radius: 40px;
+  margin: auto;
+  width: 90%;
+  background-color: rgb(139, 139, 139);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Sudoku h1{
+  font-size: 5em;
+  margin: auto;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.ecran{
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+/*================ Win et lose ==============*/
+.Win{
+  position: absolute;
+  border: double rgba(0, 255, 30, 0.761) 15px;
+  background-color: rgba(255, 255, 255, 0.619);
+  color: rgb(0, 255, 8);
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 4em;
+  top : 30%;
+}
+
+.Lose{
+  position: absolute;
+  border: double rgba(255, 8, 0, 0.761) 15px;
+  background-color: rgba(255, 255, 255, 0.619);
+  color: rgb(255, 0, 0);
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 4em;
+  top : 30%;
+}
+
+
+
+/*============ Taille d'écran ========*/
+
+@media screen and (max-width : 550px){
+  #Sudoku{
+    width: 500px;
+  }
+  #Sudoku h1{
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width : 870px){
+  #Menu h2{
+    font-size : 1.2em;
+  }
+
+  #Menu h1{
+    font-size: 3.5em;
+  }
+
+  #commencer button{
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width : 820px){
+  #Sudoku{
+    width: 700px;
+  }
+}
+
+
